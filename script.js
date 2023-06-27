@@ -1,5 +1,5 @@
 function operate(a,b,op){
-    if(typeof(a) == 'number' && typeof(b) == 'number' && (op == "+" || op == "-" || op == "*" || op == "/")){
+    if(typeof(a) == 'number' && typeof(b) == 'number' && (op == "+" || op == "-" || op == "*" || op == "/" || op == "÷")){
         if(op == "+"){
             return add(a,b);
         }
@@ -9,7 +9,7 @@ function operate(a,b,op){
         else if(op == "*"){
             return multiply(a,b);
         }
-        else if(op == "/"){
+        else if(op == "÷" || op == "/"){
             return divide(a,b);
         }
         else{
